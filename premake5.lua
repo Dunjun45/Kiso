@@ -23,13 +23,14 @@ project "Kiso"
 	}
 
 	includedirs {
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22000.0"
+		systemversion "latest"
 
 		defines {
 			"KS_PLATFORM_WINDOWS",
@@ -66,8 +67,8 @@ project "Sandbox"
 	}
 
 	includedirs {
-		"Kiso/vendor/spdlog/include",
-		"Kiso/src"
+		"Kiso/src",
+		"Kiso/vendor/spdlog/include"
 	}
 
 	links {
@@ -77,7 +78,7 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22000.0"
+		systemversion "latest"
 
 		defines {
 			"KS_PLATFORM_WINDOWS"
