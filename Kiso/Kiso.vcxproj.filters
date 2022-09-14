@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Kiso">
+      <UniqueIdentifier>{DBFD877C-C734-890D-7021-6F105C37050F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kiso\Events">
+      <UniqueIdentifier>{5F25D035-CBDA-482B-54CF-4202C0833F2F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Kiso.h" />
+    <ClInclude Include="src\Kiso\Application.h">
+      <Filter>Kiso</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\Core.h">
+      <Filter>Kiso</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\EntryPoint.h">
+      <Filter>Kiso</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\Events\ApplicationEvent.h">
+      <Filter>Kiso\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\Events\Event.h">
+      <Filter>Kiso\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\Events\KeyEvent.h">
+      <Filter>Kiso\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\Events\MouseEvent.h">
+      <Filter>Kiso\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kiso\Log.h">
+      <Filter>Kiso</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Kiso\Application.cpp">
+      <Filter>Kiso</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kiso\Log.cpp">
+      <Filter>Kiso</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
